@@ -12,9 +12,11 @@ public class RectangleClass {
     private double area;
     private double  perimeter;
 
-    public void setLengthOfRectangle(double length) {
+    public void setLengthOfRectangle(double length) throws RectangleClassExceptions {
         if (length > 0.0 && length < 20.0){
             this.length = length;
+        }else {
+            throw new RectangleClassExceptions("Enter a number between 0.00 and 20.0");
         }
     }
 
@@ -22,10 +24,13 @@ public class RectangleClass {
         return length;
     }
 
-    public void setWidthOfRectangle(double width) {
+    public void setWidthOfRectangle(double width) throws RectangleClassExceptions {
         if (width > 0.0 && width < 20.0){
-            this.width = width;
+           this.width = width;
+            }else {
+            throw new RectangleClassExceptions("Enter a number between 0.00 and 20.0 ");
         }
+
     }
 
     public double getWidthOfRectangle() {

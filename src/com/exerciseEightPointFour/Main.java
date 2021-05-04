@@ -3,7 +3,7 @@ package com.exerciseEightPointFour;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws RectangleClassExceptions {
         RectangleClass rectangleClass = new RectangleClass();
 
         Scanner input = new Scanner(System.in);
