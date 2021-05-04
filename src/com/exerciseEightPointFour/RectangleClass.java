@@ -10,6 +10,7 @@ public class RectangleClass {
     private double width;
     private double length;
     private double area;
+    private double  perimeter;
 
     public void setLengthOfRectangle(double length) {
         if (length > 0.0 && length < 20.0){
@@ -37,5 +38,13 @@ public class RectangleClass {
 
     public double getAreaOfRectangle() {
         return area;
+    }
+
+    public void perimeterOfRectangle() {
+        perimeter = 2 * (length + width);
+    }
+
+    public double getPerimeterOfRectangle() {
+        return perimeter;
     }
 }

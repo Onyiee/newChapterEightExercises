@@ -37,4 +37,12 @@ class RectangleClassTest {
         rectangleClass.areaOfRectangle();
         assertEquals(270.0, rectangleClass.getAreaOfRectangle());
     }
+
+    @Test
+    void perimeterOfRectangleCanBeGotten(){
+        rectangleClass.setLengthOfRectangle(15.0);
+        rectangleClass.setWidthOfRectangle(18.0);
+        rectangleClass.perimeterOfRectangle();
+        assertEquals(66.0, rectangleClass.getPerimeterOfRectangle());
+    }
 }
