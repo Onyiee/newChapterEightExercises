@@ -33,7 +33,7 @@ class DateClassTest {
     }
 
     @Test
-    void dateClassForMonthDayYearCanBeGotten(){
+    void dateClassForMonthDayYearCanBeGotten() throws DateClassExceptions {
         dateClass = new DateClass(12,22,2021);
         assertEquals(12,dateClass.getMonth());
         assertEquals(22,dateClass.getDay());

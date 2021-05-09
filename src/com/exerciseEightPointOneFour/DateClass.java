@@ -24,10 +24,15 @@ public class DateClass {
     public DateClass() {
     }
 
-    public DateClass(int month, int day, int year) {
-        this.day = day;
-        this.month = month;
-        this.year = year;
+    public DateClass(int month, int day, int year) throws DateClassExceptions {
+        if(day>0&&day<=31&&month>0&&month<=12&&year>0){
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+        else{
+                throw new DateClassExceptions("Invalid date entered check the date and re-enter");
+        }
     }
 
     public DateClass(String monthInWords, int day, int year) {
